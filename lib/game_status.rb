@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each {|win_combo|}
+  WIN_COMBINATIONS.each {|win_combo|
   index_0 = win_combo |0|
   index_1 = win_combo |1|
   index_2 = win_combo |2|
@@ -29,3 +29,4 @@ def won?(board)
     return win_combo
   elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
     return win_combo
+  end
